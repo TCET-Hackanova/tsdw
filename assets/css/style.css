@@ -41,6 +41,7 @@ body {
   height: 400px;
   background-size: contain;
 }
+
 @media screen and (max-width: 768px) {
   #intro_div2 img {
     height: 200px;
