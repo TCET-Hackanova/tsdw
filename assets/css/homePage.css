@@ -1,0 +1,29 @@
+.forBoxShadow {
+  -webkit-box-shadow: 8px 9px 7px 0px rgba(84, 84, 84, 1) !important;
+  -moz-box-shadow: 8px 9px 7px 0px rgba(84, 84, 84, 1) !important;
+  box-shadow: 8px 9px 7px 0px rgba(84, 84, 84, 1) !important;
+}
+.registerBtn {
+  border: 2px solid #ff731d !important;
+  color: black;
+  border-radius: 10px;
+  background-color: #ff731d;
+  margin-bottom: 10px;
+}
+.registerBtn:hover {
+  color: white;
+}
+.InsideBlock {
+}
+.cardHeading:hover {
+  color: black !important;
+}
+.cardHeading {
+  text-decoration: underline;
+}
+.service-box:hover > .InsideBlock {
+  background-color: rgb(82, 82, 82) !important;
+}
+.service-box:hover {
+  background-color: rgb(241, 241, 241) !important;
+}
