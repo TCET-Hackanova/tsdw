@@ -1,7 +1,5 @@
 .forBoxShadow {
-  -webkit-box-shadow: 8px 9px 7px 0px rgba(84, 84, 84, 1) !important;
-  -moz-box-shadow: 8px 9px 7px 0px rgba(84, 84, 84, 1) !important;
-  box-shadow: 8px 9px 7px 0px rgba(84, 84, 84, 1) !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
 }
 .registerBtn {
   border: 2px solid #ff731d !important;

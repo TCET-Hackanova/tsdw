@@ -38,6 +38,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reflex.css" />
   </head>
 
   <body>
@@ -53,7 +54,9 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
+            <li>
+              <a class="nav-link scrollto active" href="./index.html">Home</a>
+            </li>
             <li><a class="nav-link scrollto" href="#Events">Events</a></li>
             <li class="dropdown">
               <a href="#"
@@ -65,14 +68,18 @@
             </li>
 
             <li>
-              <a class="nav-link scrollto" href="#Reflex">Reflex</a>
+              <a class="nav-link scrollto" href="./Reflex.html">Reflex</a>
             </li>
-            <li><a class="nav-link scrollto" href="#tsparx">T-Sparx</a></li>
+            <li>
+              <a class="nav-link scrollto" href="./Tsparx.html">T-Sparx</a>
+            </li>
             <li><a href="https://tsdw-tcet.in/">Hacaknova</a></li>
 
-            <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
             <li>
-              <a class="getstarted scrollto" href="#about">Get Started</a>
+              <a class="nav-link scrollto" href="./about.html">About Us</a>
+            </li>
+            <li>
+              <a class="getstarted scrollto" href="./about">Get Started</a>
             </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
@@ -83,17 +90,35 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="hero d-flex align-items-center">
+    <section
+      id="hero"
+      class="hero d-flex align-items-center"
+      style="
+        -webkit-clip-path: circle(75.7% at 30% 55%);
+        clip-path: circle(75.7% at 30% 55%);
+      "
+    >
       <div class="container">
         <div class="row">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">TSDW Welcomes you</h1>
+            <h1 data-aos="fade-up " class="TSDWheading">TSDW Welcomes you</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">
               With a goal of providing a common platform to students for
               co-curricular and extra-curricular activities the Students’
               Council – TCET was formed in the academic year 2004-05 as per the
               guidelines of the Mumbai University.
             </h2>
+            <h1 data-aos="fade-up" data-aos-delay="500">
+              <a
+                href=""
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "TSDW a platform for `Student`.", "TCET."]'
+                style="font-size: 2rem"
+              >
+                <span class="wrap"></span>
+              </a>
+            </h1>
             <div data-aos="fade-up" data-aos-delay="600">
               <div class="text-center text-lg-start">
                 <!-- <a
@@ -105,11 +130,23 @@
                 </a> -->
 
                 <!-- Button trigger modal -->
-                <button style="margin-top: 10px; padding: 10px;  background-color: aliceblue; color: coral;" type="button" class="btn " data-bs-toggle="modal" data-bs-target="#eventModal">
-                  <span class=" p-8">Explore Events </span> 
-                   <i class="bi bi-arrow-right"></i>
+                <button
+                  style="
+                    margin-top: 10px;
+                    padding: 10px;
+                    background-color: rgb(51, 51, 51);
+                    color: coral;
+                  "
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#eventModal"
+                >
+                  <span class="p-8" style="font-weight: bolder"
+                    >Explore Events
+                  </span>
+                  <i class="bi bi-arrow-right"></i>
                 </button>
-
               </div>
             </div>
           </div>
@@ -127,37 +164,39 @@
           </div>
         </div>
       </div>
-
-
-     
-
+    </section>
+    <!-- End Hero -->
     <!-- EVENT Modal -->
-    <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="eventModal"
+      tabindex="-1"
+      aria-labelledby="eventModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="eventModalLabel">UPCOMING EVENT</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div  class="modal-body">
-           <img
+          <div class="modal-body">
+            <img
               id="hero-img"
               src="assets/img/hero-ani.gif"
               class="img-fluid"
               alt=""
             />
           </div>
-          <div class="modal-footer">
-           
-          </div>
+          <div class="modal-footer"></div>
         </div>
       </div>
     </div>
-
-
-    </section>
-    <!-- End Hero -->
-
     <main id="main">
       <!-- ======= About Section  000000111111111======= -->
       <section id="about" class="about">
@@ -176,7 +215,7 @@
                   students with competitive advantages and the potential to
                   build a cohort for future leaders for global positions.
                 </p>
-                <div class=" text-lg-start">
+                <div class="text-lg-start">
                   <a
                     href="#"
                     class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
@@ -189,7 +228,6 @@
             </div>
 
             <div
-           
               class="col-lg-6 d-flex align-items-center"
               data-aos="zoom-out"
               data-aos-delay="200"
@@ -203,66 +241,33 @@
       </section>
       <!-- End About Section -->
 
-      <!-- ======= About Section 0002222222222 ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row gx-0" id="cultural_intro">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="content">
-                <h3>Cultural life at TCET</h3>
-                <h2>TSDW strives</h2>
-                <p>
-                  TSDW strives to organize various programs to equip the
-                  students with competitive advantages and the potential to
-                  build a cohort for future leaders for global positions.
-                </p>
-                <div class=" text-lg-start">
-                  <a
-                    href="#"
-                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
-                  >
-                    <span>Read More</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div
-              id="intro_div2"
-              class="col-lg-6 d-flex align-items-center"
-              data-aos="zoom-out"
-              data-aos-delay="200"
-            >
-             <img src="/assets/img/tsdw_dance1.jpg" alt="#">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
-
-      <!-- ======= About Section  000003333333333 ======= -->
+      <!-- ======= About Section  0000002222222222222222======= -->
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="row gx-0">
             <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <video id="section2_img" class="img-fluid" autoplay loop>
+                <source src="assets\img\RENDER.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div
               class="col-lg-6 d-flex flex-column justify-content-center"
               data-aos="fade-up"
               data-aos-delay="200"
             >
               <div class="content">
-                <h3>Sports life at TCET</h3>
+                <h3>Who We Are</h3>
                 <h2>TSDW strives</h2>
                 <p>
                   TSDW strives to organize various programs to equip the
                   students with competitive advantages and the potential to
                   build a cohort for future leaders for global positions.
                 </p>
-                <div class=" text-lg-start">
+                <div class="text-lg-start">
                   <a
                     href="#"
                     class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
@@ -273,1123 +278,67 @@
                 </div>
               </div>
             </div>
-
-            <div
-             id="intro_div2"
-              class="col-lg-6 d-flex align-items-center"
-              data-aos="zoom-out"
-              data-aos-delay="200"
-            >
-               <img src="/assets/img/tsdw_sports.jpg" alt="#">
-            </div>
           </div>
         </div>
       </section>
       <!-- End About Section -->
 
-        <!-- ======= About Section 0004444444 ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row gx-0" id="technical_intro">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="content">
-                <h3>Technical life at TCET</h3>
-                <h2>TSDW strives</h2>
-                <p>
-                  TSDW strives to organize various programs to equip the
-                  students with competitive advantages and the potential to
-                  build a cohort for future leaders for global positions.
-                </p>
-                <div class=" text-lg-start">
-                  <a
-                    href="#"
-                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
-                  >
-                    <span>Read More</span>
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+      <!-- Gallery -->
+      <div class="container">
+        <header class="section-header">
+          <h2>Gallery</h2>
+          <p>Meet The Team</p>
+        </header>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              class="w-100 shadow-1-strong rounded mb-4 inner-img"
+              alt="Boat on Calm Water"
+            />
 
-            <div
-              id="intro_div2"
-              class="col-lg-6 d-flex align-items-center"
-              data-aos="zoom-out"
-              data-aos-delay="200"
-            >
-             <img src="/assets/img/tsdw-hack.jpg" alt="#">
-            </div>
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+              class="w-100 shadow-1-strong rounded mb-4 inner-img hover-1"
+              alt="Wintry Mountain Landscape"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+              class="w-100 shadow-1-strong rounded mb-4 inner-img"
+              alt="Mountains in the Clouds"
+            />
+
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              class="w-100 shadow-1-strong rounded mb-4 inner-img"
+              alt="Boat on Calm Water"
+            />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+              class="w-100 shadow-1-strong rounded mb-4 inner-img"
+              alt="Waves at Sea"
+            />
+
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+              class="w-100 shadow-1-strong rounded mb-4 inner-img"
+              alt="Yosemite National Park"
+            />
           </div>
         </div>
-      </section>
-      <!-- End About Section -->
-
-      <!-- ======= Values Section ======= -->
-      <section id="values" class="values">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
-            <h2>Our Culture</h2>
-            <p>Odit est perspiciatis laborum et dicta</p>
-          </header>
-
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <img src="assets/img/respect.png" class="img-fluid" alt="" />
-                <h3>Respect</h3>
-                <p>
-                 It doesn't come from titles, it comes from conduct. Respect gets respect.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 mt-4 mt-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="box">
-                <img src="assets/img/performance1.png" class="img-fluid" alt="" />
-                <h3>Performance</h3>
-                <p>
-                  It is not just about what you are meant to do but also what are meant to achieve. The Output combined with the outcome. Always know why you are doing, what you are doing.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 mt-4 mt-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div class="box">
-                <img src="assets/img/ownership.png" class="img-fluid" alt="" />
-                <h3>Ownership</h3>
-                <p>
-                  Ownership is going beyond. It is not taking what organization lays out for you, as the only benchmark. Instead finding your own levels of the benchmark.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Values Section -->
-
-      <!-- ======= Counts Section ======= -->
-      <section id="counts" class="counts">
-        <div class="container" data-aos="fade-up">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="bi bi-emoji-smile"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="1032"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Happy Students</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="bi bi-journal-richtext" style="color: #df30b0"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="30"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Events Conducted</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="bi bi-alarm"  style="color: #5867eb" ></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="800"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Hours Of Planning</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="bi bi-people" style="color: #bb0852"></i>
-                <div>
-                  <span
-                    data-purecounter-start="0"
-                    data-purecounter-end="80"
-                    data-purecounter-duration="1"
-                    class="purecounter"
-                  ></span>
-                  <p>Hard Working members</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Counts Section -->
-
-      <!-- ======= EVENT CONDUCTED  Section ======= -->
-      <section id="portfolio" class="portfolio">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
-            <h2>EVENTS CONDUCTED</h2>
-            <p>Check our latest events</p>
-          </header>
-
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-vaccination">Vaccination Drive</li>
-                <li data-filter=".filter-event2">Samvaad'22</li>
-                <li data-filter=".filter-event3">Debate-e-Darbaar</li>
-                <li data-filter=".filter-event4">Bollywood day</li>
-                <li data-filter=".filter-event5">Garba night</li>
-                <li data-filter=".filter-event6">Leader Con</li>
-                <li data-filter=".filter-event7">Firebase</li>
-              </ul>
-            </div>
-          </div>
-
-          <div
-            class="row gy-4 portfolio-container"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <!--#################### EVENT 01 - VACCINATION DRIVE ###################-->
-
-            <!-- Vaccination Drive IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-vaccination">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_vaccine1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>08th & 10th August, 2022</h4>
-                  <p>A camp was organized for the students to
-                    get the booster dose vaccine as suggested
-                    by the government.</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_vaccine1.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Booster Vaccination drive"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Vaccination Drive IMG 02 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-vaccination">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_vaccine2.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>08th & 10th August, 2022</h4>
-                  <p>A camp was organized for the students to
-                    get the booster dose vaccine as suggested
-                    by the government.</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_vaccine2.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Booster Vaccination drive"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Vaccination Drive IMG 03 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-vaccination">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_vaccine3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>08th & 10th August, 2022</h4>
-                  <p>A camp was organized for the students to
-                    get the booster dose vaccine as suggested
-                    by the government.</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_vaccine3.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Booster Vaccination drive"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--#################### EVENT 01 ENDS ###################-->
-
-            <!--#################### EVENT 02 -  SAMVAAAD'22  ###################-->
-
-            <!-- EVENT 02 IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event2">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_samvad1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>App</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_samvad1.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="App 1"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 02 IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event2">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_samvad2.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>App</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_samvad2.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="App 1"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 02 IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event2">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_samvad3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>App</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_samvad3.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="App 1"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--#################### EVENT 02 ENDS ###################-->
-
-            <!--#################### EVENT 03 -  Debate E DARBAAR  ###################-->
-
-            <!-- EVENT 03 IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event3">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_debate1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>27th August, 7th & 12th September 2022
-                  </h4>
-                  <p>Ground Level to an Institute level
-                    Debate competition was held to test the
-                    literary skills of the students and to
-                    identify a Debate team for outhouse
-                    participations.</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_debate1.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Winner of Debate-e-Darbaar 2022"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 03 IMG 02 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event3">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_debate2.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>27th August, 7th & 12th September 2022
-                  </h4>
-                  <p>Ground Level to an Institute level
-                    Debate competition was held to test the
-                    literary skills of the students and to
-                    identify a Debate team for outhouse
-                    participations.</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_debate2.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Winner of Debate-e-Darbaar 2022"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 03 IMG 03 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event3">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_debate3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>27th August, 7th & 12th September 2022
-                  </h4>
-                  <p>Ground Level to an Institute level
-                    Debate competition was held to test the
-                    literary skills of the students and to
-                    identify a Debate team for outhouse
-                    participations.</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_debate3.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Winner of Debate-e-Darbaar 2022"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--#################### EVENT 03 ENDS ###################-->
-
-            <!--#################### EVENT 04 -  BOLLYWOOD DAY  ###################-->
-
-            <!-- EVENT 04 IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event4">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_bolly1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>29th September 2022</h4>
-                  <p p-6>
-                    Everyone is a huge fan of Bollywood movies which unleashes
-                    the hidden divas within us. TSDW introduced Bollywood day in
-                    TCET for all the students to get creative and bond with
-                    other fellow.
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_bolly1.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Bollywood Day"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-instagram"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 04 IMG 02 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event4">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_bolly2.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>29th September 2022</h4>
-                  <p p-6>
-                    Everyone is a huge fan of Bollywood movies which unleashes
-                    the hidden divas within us. TSDW introduced Bollywood day in
-                    TCET for all the students to get creative and bond with
-                    other fellow.
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_bolly2.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Bollywood Day"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-instagram"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 04 IMG 03 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event4">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_bolly3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>29th September 2022</h4>
-                  <p p-6>
-                    Everyone is a huge fan of Bollywood movies which unleashes
-                    the hidden divas within us. TSDW introduced Bollywood day in
-                    TCET for all the students to get creative and bond with
-                    other fellow.
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_bolly3.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Bollywood Day"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-instagram"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--#################### EVENT 04 ENDS ###################-->
-
-
-
-
-
-
-             <!--#################### EVENT 05 -  Garba night  ###################-->
-
-            <!-- EVENT 05 IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event5">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_garba1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>date</h4>
-                  <p p-6>
-                    random text
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_garba1.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Garba Night"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 05 IMG 02 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event5">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_garba2.webp"
-                  class="img-fluid"
-                  alt=""
-                ></img>
-                <div class="portfolio-info">
-                  <h4>date</h4>
-                  <p p-6>
-                    random text
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_garba2.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Garba Night"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <!--#################### EVENT 05 ENDS ###################-->
-
-
-            <!--#################### EVENT 06 -  Leadership con  ###################-->
-
-            <!-- EVENT 06 IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event6">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_leadership1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>date</h4>
-                  <p p-6>
-                    random text
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_leadership1.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Leadership Con"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 06 IMG 02 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event6">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_leadership2.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>date</h4>
-                  <p p-6>
-                    random text
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_leadership2.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Leadership Con"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENT 06 IMG 03 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event6">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_leadership3.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>date</h4>
-                  <p p-6>
-                    random text
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_leadership3.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="Leadership Con"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--#################### EVENT 06 ENDS ###################-->
-
-               <!--#################### EVENT 07 - Firebase   ###################-->
-
-            <!-- EVENT 07 IMG 01 -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-event7">
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/portfolio/tsdw_firebase1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>date</h4>
-                  <p p-6>
-                    random text
-                  </p>
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/tsdw_firebase1.webp"
-                      data-gallery="portfolioGallery"
-                      class="portfokio-lightbox"
-                      title="FireBase"
-                      ><i class="bi bi-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bi bi-link"></i></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-            <!--#################### EVENT 07 ENDS ###################-->
-
-          </div>
-        </div>
-      </section>
-
-
-      <!-- ======= SPONSERS Section clients == sponsers ======= -->
-      <section id="clients" class="clients">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
-            <h2>Our Sponsers</h2>
-            
-          </header>
-
-          <div class="clients-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/Sponsers/client-1.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/Sponsers/client-2.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/Sponsers/client-3.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/Sponsers/client-4.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/Sponsers/client-5.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/Sponsers/client-6.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/Sponsers/client-7.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/Sponsers/client-8.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End Sponser Section -->
-
-      <!-- ======= Services Section  ( UPCOMMING EVENT)======= -->
-
-      <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
-            <h2>UPCOMING EVENTS</h2>
-            <p>Find below to links to Register</p>
-          </header>
-
-          <div class="row gy-4">
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-box blue">
-                <div><img src="https://contentstatic.techgig.com/photo/79316261/5-advantages-of-attending-hackathons-for-developers.jpg?246643" alt="" class="cardimage card-img-top" /></div>
-                <h3>Hacknova 2.0</h3>
-                <p>
-                  Provident nihil minus qui consequatur non omnis maiores. Eos
-                  accusantium minus dolores iure perferendis tempore et
-                  consequatur.
-                </p>
-                <a href="#" class="read-more"
-                  ><span>Register Now</span> <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="service-box orange">
-                <div><img src="https://contentstatic.techgig.com/photo/79316261/5-advantages-of-attending-hackathons-for-developers.jpg?246643" alt="" class="cardimage card-img-top" /></div>
-                <h3>Hacknova 2.0</h3>
-                <p>
-                  Ut autem aut autem non a. Sint sint sit facilis nam iusto
-                  sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
-                </p>
-                <a href="#" class="read-more"
-                  ><span>Register Now</span> <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="service-box green">
-                <div><img src="https://contentstatic.techgig.com/photo/79316261/5-advantages-of-attending-hackathons-for-developers.jpg?246643" alt="" class="cardimage card-img-top" /></div>
-                <h3>Hacknova 2.0</h3>
-                <p>
-                  Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
-                  Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
-                </p>
-                <a href="#" class="read-more"
-                  ><span>Register Now</span> <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Services Section -->
-   <!-- Register upcoming events Section -->
-                <div class="clients-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/register-tsdw.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/register2-tsdw.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/register-tsdw.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/register2-tsdw.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/register-tsdw.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/register2-tsdw.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/register-tsdw.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/register2-tsdw.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-           
-          </div>
-
-      <!-- End upcoming Section -->
-
-    
-      
-
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
-            <h2>Contact</h2>
-            <p>Contact Us</p>
-          </header>
-
-          <div class="row gy-4">
-            <div class="col-lg-6">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <i class="bi bi-geo-alt"></i>
-                    <h3>Address</h3>
-                    <p>A-Block Gate No 5, Thakur Educational Campus<br />Kandivali East, Mumbai</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <i class="bi bi-telephone"></i>
-                    <h3>Call Us</h3>
-                    <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <i class="bi bi-envelope"></i>
-                    <h3>Email Us</h3>
-                    <p>info@example.com<br />contact@example.com</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <i class="bi bi-clock"></i>
-                    <h3>Open Hours</h3>
-                    <p>Monday - Friday<br />9:00AM - 05:00PM</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <form
-                action="forms/contact.php"
-                method="post"
-                class="php-email-form"
-              >
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-6">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Your Email"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="subject"
-                      placeholder="Subject"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-12">
-                    <textarea
-                      class="form-control"
-                      name="message"
-                      rows="6"
-                      placeholder="Message"
-                      required
-                    ></textarea>
-                  </div>
-
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-
-                    <button type="submit">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Contact Section -->
+      </div>
+      <!-- Gallery -->
     </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
-      
-
       <div class="footer-top">
         <div class="container">
           <div class="row gy-4">
@@ -1398,7 +347,9 @@
                 <img src="assets/img/tsdw-logo.png" alt="" />
               </a>
               <p>
-               TSDW strives to organize various programmes to equip the students with competitive advantages and the potential to build a cohort for future leaders for global positions.
+                TSDW strives to organize various programmes to equip the
+                students with competitive advantages and the potential to build
+                a cohort for future leaders for global positions.
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -1409,8 +360,6 @@
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-
-         
           </div>
         </div>
       </div>
@@ -1431,18 +380,22 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/reflex.js"></script>
+    <script src="./assets/js/main.js"></script>
 
     <script type="text/javascript">
-      
-    $(window).on('load',   function() {
-
-       setTimeout(function(){$('#eventModal').modal('show')},5000 )
-       
-    });
-</script>
+      $(window).on("load", function () {
+        setTimeout(function () {
+          $("#eventModal").modal("show");
+        }, 5000);
+      });
+    </script>
   </body>
 </html>

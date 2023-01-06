@@ -1,0 +1,48 @@
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img:hover {
+  transform: scale(1.1);
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.486);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.349);
+  box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.301);
+}
+.hover-4 {
+  border: 8px solid;
+  border-image: repeating-linear-gradient(
+      135deg,
+      #ff8800 0 10px,
+      #ffb259 0 20px,
+      #fff1e2 0 30px
+    )
+    8;
+  -webkit-mask: conic-gradient(
+        from 180deg at top 8px right 8px,
+        #0000 90deg,
+        #000 0
+      )
+      var(--_i, 200%) 0 /200% var(--_i, 8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0
+      var(--_i, 200%) / var(--_i, 8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: 0.3s, -webkit-mask-position 0.3s 0.3s;
+}
+.hover-4:hover {
+  --_i: 100%;
+  color: #cc333f;
+  transition: 0.3s, -webkit-mask-size 0.3s 0.3s;
+}
+
+/* Other styling elements, that are not necessary for the example */
+.TSDWheading {
+  background: linear-gradient(-135deg, #000 50%, #fff 0) var(--_d, 100%) / 250%
+      no-repeat,
+    linear-gradient(-135deg, #0000 50%, #000 0) var(--_d, 100%) / 250% no-repeat !important;
+  -webkit-background-clip: text, padding-box !important;
+  background-clip: text, padding-box !important;
+  transition: 0.8s !important;
+}
+.TSDWheading:hover {
+  --_d: 50%;
+}
