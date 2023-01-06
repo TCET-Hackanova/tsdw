@@ -1038,7 +1038,6 @@ section {
 .services .service-box:hover h3,
 .services .service-box:hover p,
 .services .service-box:hover .read-more {
-  color: #fff;
 }
 
 .services .service-box:hover .icon {
