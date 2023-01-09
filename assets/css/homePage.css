@@ -22,6 +22,6 @@
 .service-box:hover > .InsideBlock {
   background-color: rgb(82, 82, 82) !important;
 }
-.service-box:hover {
+/* .service-box:hover {
   background-color: rgb(241, 241, 241) !important;
-}
+} */

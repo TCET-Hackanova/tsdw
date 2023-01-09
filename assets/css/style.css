@@ -45,14 +45,14 @@ body {
 }
 
 #technical_intro h3 {
-  color: #7a22ff;
+  color: #ff8522;
 }
 #technical_intro h2 {
-  color: #7a22ff;
+  color: #ff8522;
 }
 
 #technical_intro a {
-  background-color: #7a22ff;
+  background-color: #ff8522;
   box-shadow: rgba(255, 211, 35, 0.108) 0px 8px 24px;
 }
 
@@ -61,6 +61,44 @@ body {
   height: 400px;
   background-size: contain;
 }
+
+/* UPCOMING CARD CSS */
+
+.upcoming_event_card {
+  background-color: #fffaf5;
+  padding: 10px;
+
+  border-radius: 10px;
+  border: 2px dashed #ff8522;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important;
+}
+
+.upcoming_event_card:hover {
+  background-color: #ffe8ce !important;
+}
+
+.upcoming_event_card_text p {
+  font-family: "Londrina Solid", cursive;
+}
+.upcoming_event_card_text a {
+  display: block;
+  font-family: "Londrina Solid", cursive;
+  padding: 15px 40px;
+  transition: 0.2s ease-in-out;
+  color: #ff8522;
+  color: #fff;
+  background-color: #ff8522;
+  box-shadow: rgba(99, 99, 99, 0.055) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+.upcoming_event_card_text a:hover {
+  background-color: #f9f5ff;
+  color: #ff8522;
+}
+/* UPCOMING CARD CSS */
+
 @media screen and (max-width: 768px) {
   #intro_div2 img {
     height: 200px;
@@ -1033,15 +1071,6 @@ section {
 
 .services .service-box.pink:hover {
   background: #f51f9c;
-}
-
-.services .service-box:hover h3,
-.services .service-box:hover p,
-.services .service-box:hover .read-more {
-}
-
-.services .service-box:hover .icon {
-  background: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -2320,6 +2349,5 @@ section {
 }
 
 /* upcoming events start*/
-.cardimage {
-}
+
 /* upcoming events end*/
